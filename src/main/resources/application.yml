@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://mysql-container:3306/malikdiopp
+    url: jdbc:mysql://mysql/malikdiopp
     username: root
     password: root
   jpa:
