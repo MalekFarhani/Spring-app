@@ -1,6 +1,6 @@
 FROM openjdk:11-jre-slim
 
-COPY target/crud.jar app.jar
+COPY target/Crud-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
