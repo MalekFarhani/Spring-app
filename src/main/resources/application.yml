@@ -1,14 +1,14 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${mysql:localhost}:3306/malikdiop?createDatabaseIfNotExist=true
+    url: jdbc:mysql://mysql-container:3306/malikdiopp
     username: root
-    password:
-    hikari:
-      initialization-fail-timeout: 0
+    password: root
   jpa:
-    database-platform: org.hibernate.dialect.MySQL5Dialect
-    generate-ddl: true
-    show-sql: true
     hibernate:
       ddl-auto: update
+    show-sql: true
+  application:
+    name: Crud
+
+server:
+  port: 8080
